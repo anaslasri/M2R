@@ -74,10 +74,11 @@ figure
 subplot(2,2,1)
 scatter3(acc_alphabetagamma(:,1),acc_alphabetagamma(:,2),acc_alphabetagamma(:,3))
 %Plot for distribution of alpha, beta, gamma separately 
+rng 'default'
 subplot(2,2,2)
-histogram(acc_alphabetagamma(:,1))
+histfit(acc_alphabetagamma(:,1),50,'normal')
 subplot(2,2,3)
-histogram(acc_alphabetagamma(:,2))
+histfit(acc_alphabetagamma(:,2),50,'normal')
 subplot(2,2,4)
-histogram(acc_alphabetagamma(:,3))
+histfit(acc_alphabetagamma(:,3),50,'normal')
 
