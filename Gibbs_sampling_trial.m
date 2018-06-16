@@ -7,7 +7,7 @@ z=zeros(50,3);
 for i=1:50
     z(i,1)=random('normal',y(i,1),500);
     z(i,2)=random('normal',y(i,2),500);
-    z(i,3)=random('normal',y(i,3),500);
+    z(i,3)=50000-z(i,1)-z(i,2);
 end
 %z(:,1)=s(t) data for human population
 %z(:,2)=z(t) data for zombie population
